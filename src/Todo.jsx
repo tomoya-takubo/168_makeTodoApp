@@ -58,7 +58,7 @@ export const Todo = () => {
 
       <div className='incomplete-area'>
         <p className='title'>未完了のTODO</p>
-        <ul>
+        <ul className='sample'>
           {incompleteTodos.map((todo) => {
             return(
               <li key={todo.incompleteTodoId} style={{listStyle: 'none'}}>
@@ -75,7 +75,7 @@ export const Todo = () => {
 
       <div className='complete-area'>
         <p className='title'>完了のTODO</p>
-        <ul>
+        <ul className='sample'>
           {completeTodos.map((todo, index) => {
             return (
               <li key={todo}>
